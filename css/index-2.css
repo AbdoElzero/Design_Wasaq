@@ -1,0 +1,224 @@
+:root {
+    --main-color: #243261;
+    --sec-color: #3B4E89;
+    --back-color: #566AED;
+    --text-color: #6E768E;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Effra Medium" "sans-serif";
+    background-color: #FFFFFF;
+}
+/* Start header */
+header {
+    padding: 20px 0;
+    box-shadow: 0px 1px 4px 0px #00000026;
+    background-color: #FFFFFF;
+    margin-bottom: 40px;
+}
+header img {
+    width: 180.62px;
+    height: 54.1px;
+}
+@media (max-width: 991px) {
+    header {
+        text-align: center;
+    }
+}
+/* End header */
+/* Start Contant */
+.box .one {
+    text-align: left;
+    margin-bottom: 16px;
+}
+.box .one span {
+    color: #454545;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.box .one .count {
+    display: inline-block;
+    border: 1px solid #6E768E42;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    color: #6E768E;
+    font-size: 20px;
+    font-weight: 500;
+    width: 130px;
+}
+.box .one .count input {
+    outline: none;
+    border: none;
+    width: 56px;
+}
+.box .one .count img {
+    position: relative;
+    cursor: pointer;
+}
+.box .one .count img.onee {
+    right: 28px;
+    top: -10px;
+}
+.box .one .count img.two {
+    top: 8px;
+    right: 3px;
+}
+.accordion {
+    --bs-accordion-active-bg: transparent;
+    --bs-accordion-btn-focus-border-color: transparent;
+}
+.accordion-item {
+    margin-bottom: 16px;
+}
+.accordion-header .accordion-button {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.accordion-header .accordion-button .first span {
+    text-align: right;
+    display: block;
+}
+.accordion-header .accordion-button .first span.one {
+    color: #6E768E;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.accordion-header .accordion-button .first span.two {
+    color: #243261;
+    font-size: 18px;
+    font-weight: 500;
+}
+.accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+.accordion-button::after {
+    margin-right: auto;
+    margin-left: 0;
+}
+.accordion-item:first-of-type .accordion-button {
+    border: 1px solid #6E768E42;
+}
+.accordion-body {
+    border-top: none;
+    border: 1px solid #6E768E42;
+}
+.accordion-body h2 {
+    font-size: 16px;
+    font-weight: 500;color: var(--sec-color);
+    margin: 0;
+    margin-bottom: 20px;
+}
+.accordion-body .d-fl {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.accordion-body ul {
+    padding: 0;
+    margin: 0;
+}
+.accordion-body ul.one {
+    width: 25%;
+    text-align: right;
+    margin: 0;
+}
+.accordion-body ul.two {
+    width:  75%;
+    text-align: right;
+}
+.accordion-body ul li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #454545;
+}
+.accordion-body ul li img {
+    margin-left: 10px;
+}
+.accordion-body ul li:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+.accordion-button:not(.collapsed) {
+    box-shadow:  none;
+}
+.box .end {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 10px;
+}
+.box .end span {
+    color: #454545;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+.box .num ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.box .num ul li {
+    font-size: 17px;
+    font-weight: 500;
+     color: #6E768E;
+}
+.active {
+    color: var(--back-color) !important;
+}
+@media (max-width: 1999px) {
+    .accordion-button::after {
+        position: absolute;
+        left: 20px;
+    }
+}
+@media (max-width: 991px)  {
+    .accordion-body ul.one {
+        width: 100%;
+    }
+    .accordion-body ul.two {
+        width:  100%;
+    }
+    .accordion-body ul li {
+        margin-bottom: 15px;
+    }
+    .accordion-header .accordion-button {
+        gap: 18px;
+    }
+}
+@media (max-width: 767px) {
+    .accordion-header .accordion-button {
+        gap: 0;
+    }
+    .accordion-header .accordion-button .first {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .accordion-header .accordion-button .first:last-of-type {
+        width: 100%;
+    }
+    .accordion-header .accordion-button .first span.two {
+        font-size: 14px;
+    }
+    .box .end span {
+        display: none;
+    }
+    .box .num {
+        width: 100%;
+    }
+}
+/* End Contant */
